@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get the events for a user based on the message session id</description>
+    <invocationTarget>FS_GetEventForUser</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>getEventForUser</masterLabel>
+    <progressIndicatorMessage>getting the events and sessions that you are interested</progressIndicatorMessage>
+</GenAiFunction>

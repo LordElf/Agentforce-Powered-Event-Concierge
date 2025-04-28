@@ -1,0 +1,13 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "EventSessionId" : {
+      "title" : "EventSessionId",
+      "description" : "When the user asks about the VIP Breakfast, see this variable to get the VIP Breakfast Event Session.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

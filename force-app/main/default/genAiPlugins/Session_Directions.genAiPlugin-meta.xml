@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Provides users with directions to their session. Handles requests related to obtaining precise directions. Use when the user asks &quot;Where can I find...?&quot; or &quot;Give me directions to...&quot;</description>
+    <developerName>Session_Directions</developerName>
+    <genAiFunctions>
+        <functionName>Get_Event_Session_Directions</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Confirm the session details with the user to ensure the directions are correct.</description>
+        <developerName>instruction_confirmthe0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmthe0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user asks about directions to an Event Session, or where an Event Session is located, immediately run the action called Get_Event_Session_Directions and pass the Event Session Name to the flow.</description>
+        <developerName>instruction_whentheuse1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whentheuse1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Session Directions</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide accurate directions to the user&apos;s session based on their input using details from the Event Session record, Locaiton__c and Directions_from_Main_Entrance__c.</scope>
+</GenAiPlugin>

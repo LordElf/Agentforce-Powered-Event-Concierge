@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this flow to retrieve Location__c and Directions_from_Main_Entrance__c from the Event Session record.</description>
+    <invocationTarget>Get_Event_Session_Directions</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Get Event Session Directions</masterLabel>
+</GenAiFunction>

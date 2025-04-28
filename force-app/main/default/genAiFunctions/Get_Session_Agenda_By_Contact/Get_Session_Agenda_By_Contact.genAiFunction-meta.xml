@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get all session agenda items for a contact and return as HTML table</description>
+    <invocationTarget>FS_GetSessionAgendaByContact</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Session Agenda By Contact</masterLabel>
+    <progressIndicatorMessage>Getting your agenda for the up-coming events</progressIndicatorMessage>
+</GenAiFunction>

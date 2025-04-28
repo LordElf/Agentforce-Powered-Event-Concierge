@@ -1,0 +1,17 @@
+{
+  "required" : [ "CurrentSession" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "CurrentSession" : {
+      "title" : "CurrentSession",
+      "description" : "Current Messaging Session. Must Have the user id",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "MessagingSession"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

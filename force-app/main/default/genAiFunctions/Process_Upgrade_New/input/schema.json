@@ -1,0 +1,38 @@
+{
+  "required" : [ "ContactId", "messagingSession" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ContactId" : {
+      "title" : "ContactId",
+      "description" : "Always use the Customer_Contact_Id__c field from the MessagingSession.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ProcessUpgrade" : {
+      "title" : "ProcessUpgrade",
+      "description" : "If the user confirms, set this variable to TRUE and run the flow.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "TargetUserId" : {
+      "title" : "TargetUserId",
+      "description" : "Always use the TargetUserld found in the context variables for this input.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "messagingSession" : {
+      "title" : "messagingSession",
+      "description" : "Stores the Messaging Session record. Always use the MessagingSession found in the context variables. Never use user-provided information for this input.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "MessagingSession"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

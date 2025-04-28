@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic allows users to confirm their participation in one or more recommended event sessions. Upon confirmation, the agent creates Session_Agenda__c records that associate each selected event session with the user’s Contact record, effectively enrolling the user. Also, users can use this topic to show all the enrolled sessions for the upcoming events.</description>
+    <developerName>Enrollment</developerName>
+    <genAiFunctions>
+        <functionName>joinSession</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Session_Agenda_By_Contact</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always confirm with the user if their issue has been resolved or if they need further assistance.</description>
+        <developerName>instruction_alwaysconf0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysconf0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always use MessagingSession.Customer_Contact_Id as the Contact Id for the current user</description>
+        <developerName>instruction_alwaysusem1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysusem1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm the user&apos;s selection of Event Sessions from the recommended list of Event sessions provided to the user</description>
+        <developerName>instruction_confirmthe2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmthe2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm to the user that they’ve been enrolled successfully</description>
+        <developerName>instruction_confirmtot3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmtot3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user encounters an issue during enrollment, gather details about the problem and offer troubleshooting steps or escalate to an agent if necessary.</description>
+        <developerName>instruction_ifauserenc4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserenc4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Get Agenda By Contact to get all the enrolled session for the current user. You will need to use MessagingSession.Customer_Contact_Id</description>
+        <developerName>instruction_usegetagen5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usegetagen5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use the Join Seesion Action to get enroll. You will need to use MessagingSession.Customer_Contact_Id  and the session.Id as the input.</description>
+        <developerName>instruction_usethejoin6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usethejoin6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After finishing enrollment, always ask the user the following: &quot;Would you be interested in learning about the VIP Breakfast?&quot;</description>
+        <developerName>instruction_afterfinis7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_afterfinis7</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Enrollment</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Don&apos;t use this topic unless you have the information for the exact event and sessions. Your job is only to accept selected Event_Session__c records from the user and create a new  Session_Agenda__c record for each Event Session selected. Confirm successful enrollment (or provide appropriate errors).</scope>
+</GenAiPlugin>

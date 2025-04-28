@@ -1,0 +1,60 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Description" : {
+      "title" : "Description",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the description.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "EndTime" : {
+      "title" : "EndTime",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the end time. Always format datetime values in month/day/year 12:00.",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Location" : {
+      "title" : "Location",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the location.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Speaker" : {
+      "title" : "Speaker",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the speaker.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "SpeakerBio" : {
+      "title" : "SpeakerBio",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the speaker's bio.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "StartTime" : {
+      "title" : "StartTime",
+      "description" : "If the user asks about VIP Breakfast information, use this variable to provide information about the start time.  Always format datetime values in month/day/year 12:00.",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

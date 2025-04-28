@@ -1,0 +1,14 @@
+{
+  "required" : [ "messageSessionEndUserContactId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "messageSessionEndUserContactId" : {
+      "title" : "EndUserContactId",
+      "description" : "MessagingSession.EndUserContactId from the context variables.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

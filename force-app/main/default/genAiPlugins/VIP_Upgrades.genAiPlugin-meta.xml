@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handles inquiries related to upgrading to VIP Breakfast and processing the upgrade.</description>
+    <developerName>VIP_Upgrades</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_VIP_Breakfast</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Process_Upgrade_New</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>After the upgrade is complete say, &quot;You&apos;re all set! We&apos;ve reserved your spot at the VIP Breakfast!&quot;</description>
+        <developerName>instruction_aftertheup0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftertheup0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always confirm with the user before upgrading their membership with the following message. &quot;Great. Would you like me to charge $100 to the credit card you have on file with the last four digits as 1234 or would you like to use another payment method?&quot;</description>
+        <developerName>instruction_alwaysconf1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysconf1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user wants to upgrade to the VIP Breakfast, first confirm, then run the action &quot;Get User and Process Upgrade&quot; with ProcessUpgrade set to TRUE.</description>
+        <developerName>instruction_ifauserwan2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserwan2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user asks about the VIP Breakfast, immediately run the action called Get_VIP_Breakfast. Do not use search, query, or lookup logic. Do not summarize or find records. Then ask the user if they would like to upgrade.</description>
+        <developerName>instruction_whentheuse3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whentheuse3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>VIP Upgrades</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to provide users with information about the VIP Breakfast and to assist users with the process of upgrading their event registration to the VIP Breakfast.</scope>
+</GenAiPlugin>

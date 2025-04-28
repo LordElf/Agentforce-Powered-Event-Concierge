@@ -1,0 +1,18 @@
+{
+  "required" : [ "topics" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "topics" : {
+      "title" : "Topic",
+      "description" : "The topics to get events for, the options are: \"Artificial Intelligence\", \"Data Analytics\", \"Robotics\", \"Cybersecurity\", \"Emerging Technologies\", \"Innovation in STEM Education\", and \"VIP Experience\"",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

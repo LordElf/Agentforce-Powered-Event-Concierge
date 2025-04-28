@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get the events by topic</description>
+    <invocationTarget>FS_GetEventByTopic</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>getEventByTopic</masterLabel>
+    <progressIndicatorMessage>Getting events by your interested topics</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,23 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ProcessUpgrade" : {
+      "title" : "ProcessUpgrade",
+      "description" : "If user confirms, set this variable to TRUE and run the flow.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "messagingSession" : {
+      "title" : "messagingSession",
+      "description" : "Stores the Messaging Session record. Always use the MessagingSession found in the context variables. Never use user-provided information for this input.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "MessagingSession"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

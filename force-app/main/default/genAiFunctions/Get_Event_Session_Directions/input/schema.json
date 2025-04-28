@@ -1,0 +1,14 @@
+{
+  "required" : [ "SessionName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "SessionName" : {
+      "title" : "SessionName",
+      "description" : "Always use the Session Name from the user to get directions.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
